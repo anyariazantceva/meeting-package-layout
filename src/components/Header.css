@@ -1,6 +1,16 @@
+.header__wrapper {
+    background-color: aliceblue;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
-    background-color: aliceblue;
+    padding: 1rem 0;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
 }

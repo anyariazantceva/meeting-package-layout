@@ -1,25 +1,24 @@
 import React from 'react';
 import Logo from '../assets/Logo.png';
 import './Header.css';
+import Languages from "./Languages";
 
 const Header = ({ userName }) => {
     return (
-        <header className='header'>
-            <div className="header__logo">
-                <img src={Logo} alt=""/>
-            </div>
-            <div className="header__user">
-                {userName}
-            </div>
-            <div className="header__languages">
-                <select name="languages" className="ui dropdown">
-                    <option value="">Language</option>
-                    <option value="English">English</option>
-                    <option value="Finnish">Finnish</option>
-                    <option value="Swedish">Swedish</option>
-                </select>
-            </div>
-        </header>
+        <div className='header__wrapper'>
+            <header className='header container'>
+                <div className="header__logo">
+                    <img src={Logo} alt=""/>
+                </div>
+                <div className="header__right">
+                    <div className="header__user">
+                        User: {userName}
+                    </div>
+                    <Languages/>
+                </div>
+
+            </header>
+        </div>
     )
 };
 
