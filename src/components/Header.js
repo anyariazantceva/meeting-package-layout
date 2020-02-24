@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../assets/Logo.png';
 import './Header.css';
 import Languages from "./Languages";
+import Avatar from '../assets/avatar.png';
 
 const Header = ({ userName }) => {
     return (
@@ -12,7 +13,10 @@ const Header = ({ userName }) => {
                 </div>
                 <div className="header__right">
                     <div className="header__user">
-                        User: {userName}
+                        <div className="header__avatar">
+                            <img src={Avatar} alt=""/>
+                        </div>
+                        <div className="header__name">{userName}</div>
                     </div>
                     <Languages/>
                 </div>

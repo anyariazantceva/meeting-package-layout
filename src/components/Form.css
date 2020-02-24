@@ -41,6 +41,8 @@
     border: 1px solid transparent;
     padding: 1rem .5rem;
     transition: 1s;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .form__textarea:focus {
@@ -49,8 +51,13 @@
 
 .form__checkbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row;
+
+}
+
+.form__checkbox-control {
+    margin-right: 1rem;
 }
 
 .form__btn {
@@ -62,4 +69,9 @@
     padding: 1rem 0;
     color: #ffffff;
     font-weight: bold;
+    transition: 1s;
+}
+
+.form__btn:hover, .form__btn:active {
+    background-color: #1c1cac;
 }
