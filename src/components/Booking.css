@@ -5,7 +5,7 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     padding: 2rem;
     max-height: 45rem;
-    width: 40%;
+    width: 50%;
 }
 
 .booking__head-title {
@@ -27,4 +27,16 @@
 
 .booking__bold {
     font-weight: bold;
+}
+
+@media screen and (max-width: 1022px) {
+    .booking__title {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .booking {
+        width: 100%;
+    }
 }

@@ -1,5 +1,5 @@
 .main__left {
-    width: 50%;
+    width: 48%;
 }
 
 .form {
@@ -75,3 +75,10 @@
 .form__btn:hover, .form__btn:active {
     background-color: #1c1cac;
 }
+
+@media screen and (max-width: 700px) {
+    .main__left {
+        width: 100%;
+    }
+}
+
